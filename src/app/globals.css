@@ -2,32 +2,160 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  overflow-x: hidden;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media screen and (max-width: 1180px) {
+  .responsiveFix{
+    transform: translate(10px, 10px) !important;
+  }
+}
+.customBoxShadow{
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
+}
+.border-b-1 {
+  border-bottom: 1px solid black;
+}
+.boxShadowCustom {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+}
+.boxShadowCustom2 {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: black !important;
+}
+.CustomBg {
+  background-color: rgba(0, 142, 244, 0.7);
+}
+.inputStyles {
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+.inputStyles::placeholder {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.timeline-container::after {
+  background-color: #000;
+  content: "";
+  position: absolute;
+  left: calc(50% - 2px);
+  width: 4px;
+  height: 99%;
+  margin-top: 35px;
+}
+.rightArrow::after{
+  content: "\23F5";
+  font-size: 40px;
+}
+.leftArrow::before{
+  content: '\23F4';
+  font-size: 40px;
+}
+.blackCircleRight{
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 24px;
+  right: -90px;
+  width: 20px;
+  height: 20px;
+  z-index: 100;
+}
+.blackCircleLeft{
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 24px;
+  left: -90px;
+  width: 20px;
+  height: 20px;
+  z-index: 100;
+}
+@media screen and (max-width: 640px) {
+  .timeline-container::after {
+    display: none;
+  }
+}
+@media screen and (min-width: 350px) {
+  .xstranslate-y-24 {
+    transform: translate(5rem, 6rem);
   }
 }
