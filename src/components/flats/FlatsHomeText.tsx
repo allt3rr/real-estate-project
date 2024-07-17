@@ -14,13 +14,13 @@ const FlatsHomeText = () => {
       {isMobile ? (
         <Image
           src={FlatsMobile}
-          alt="Realizacje"
+          alt="Mieszkania"
           className="translate-y-10 px-10 z-40"
         />
       ) : (
         <Image
           src={Flats}
-          alt="Realizacje"
+          alt="Mieszkania"
           className="translate-y-10 px-10 z-40"
         />
       )}
