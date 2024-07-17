@@ -47,13 +47,13 @@ const Navbar = () => {
             <div className="w-10/12 flex justify-end">
               <Drawer direction="right">
                 <DrawerTrigger>
-                  <MenuIcon />
+                  <MenuIcon className="mr-4" />
                 </DrawerTrigger>
                 <DrawerContent>
                   <DrawerClose>
                     <Button
                       variant="destructive"
-                      className="absolute right-1 top-1 w-0 h-6"
+                      className="absolute right-3 top-3 w-0 h-6"
                     >
                       X
                     </Button>
