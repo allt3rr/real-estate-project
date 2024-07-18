@@ -12,10 +12,7 @@ import StarIcon from "@mui/icons-material/Star";
 type Flat = {
   id: number;
   location: string;
-  type: string;
-  flatNumber: string;
-  roomsAmount: string;
-  metrics: number;
+  lot: string;
   description: string;
   ImageUrl: StaticImageData;
 };
