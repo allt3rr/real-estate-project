@@ -1,6 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import CompanyLogo from "/public/assets/navbar/menu_logo.svg";
+import FacebookLogo from "/public/assets/footer/facebook.svg";
+import InstagramLogo from "/public/assets/footer/instagram.svg";
+import YoutubeLogo from "/public/assets/footer/youtube.svg";
 
 const Footer = () => {
   return (
@@ -35,7 +39,17 @@ const Footer = () => {
               <a href="#">Polityka prywatności</a>
             </li>
           </ul>
-          <div className="flex justify-center items-center mt-3">sociale</div>
+          <div className="flex justify-center items-center mt-3 gap-4">
+            <Link href="#">
+              <Image src={FacebookLogo} alt="Facebook Logo" />
+            </Link>
+            <Link href="#">
+              <Image src={InstagramLogo} alt="Instagram Logo" />
+            </Link>
+            <Link href="#">
+              <Image src={YoutubeLogo} alt="Youtube Logo" />
+            </Link>
+          </div>
         </div>
       </div>
     </div>
