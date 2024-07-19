@@ -1,4 +1,5 @@
-import GarageImage from "/public/assets/adverts/garages/garage.jpg";
+import GarageImage1 from "/public/assets/adverts/garages/garage1.webp";
+import GarageImage2 from "/public/assets/adverts/garages/garage2.webp";
 
 export const initialState = {
   location: "",
@@ -31,7 +32,7 @@ export const GarageData = [
     lot: '1',
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: GarageImage,
+    ImageUrl: GarageImage1,
   },
   {
     id: 2,
@@ -40,7 +41,7 @@ export const GarageData = [
     lot: '1',
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: GarageImage,
+    ImageUrl: GarageImage2,
   },
   {
     id: 3,
@@ -49,7 +50,7 @@ export const GarageData = [
     lot: '3',
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: GarageImage,
+    ImageUrl: GarageImage2,
   },
   {
     id: 4,
@@ -58,7 +59,7 @@ export const GarageData = [
     lot: '3',
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: GarageImage,
+    ImageUrl: GarageImage2,
   },
   {
     id: 5,
@@ -67,7 +68,7 @@ export const GarageData = [
     lot: '2',
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: GarageImage,
+    ImageUrl: GarageImage1,
   },
   {
     id: 6,
@@ -76,7 +77,7 @@ export const GarageData = [
     lot: '1',
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: GarageImage,
+    ImageUrl: GarageImage1,
   },
   {
     id: 7,
@@ -85,7 +86,7 @@ export const GarageData = [
     lot: '2',
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: GarageImage,
+    ImageUrl: GarageImage1,
   },
   {
     id: 8,
@@ -94,7 +95,7 @@ export const GarageData = [
     lot: '1',
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: GarageImage,
+    ImageUrl: GarageImage1,
   },
   {
     id: 9,
@@ -103,7 +104,7 @@ export const GarageData = [
     lot: '3',
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: GarageImage,
+    ImageUrl: GarageImage2,
   },
   {
     id: 10,
@@ -112,7 +113,7 @@ export const GarageData = [
     lot: '3',
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: GarageImage,
+    ImageUrl: GarageImage2,
   },
   {
     id: 11,
@@ -121,7 +122,7 @@ export const GarageData = [
     lot: '2',
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: GarageImage,
+    ImageUrl: GarageImage2,
   },
   {
     id: 12,
@@ -130,7 +131,7 @@ export const GarageData = [
     lot: '2',
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: GarageImage,
+    ImageUrl: GarageImage1,
   },
   {
     id: 13,
@@ -139,7 +140,7 @@ export const GarageData = [
     lot: '2',
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: GarageImage,
+    ImageUrl: GarageImage2,
   },
   {
     id: 14,
@@ -148,7 +149,7 @@ export const GarageData = [
     lot: '1',
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: GarageImage,
+    ImageUrl: GarageImage1,
   },
   {
     id: 15,
@@ -157,7 +158,7 @@ export const GarageData = [
     lot: '2',
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: GarageImage,
+    ImageUrl: GarageImage2,
   },
   {
     id: 16,
@@ -166,7 +167,7 @@ export const GarageData = [
     lot: '3',
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: GarageImage,
+    ImageUrl: GarageImage2,
   },
   {
     id: 17,
@@ -175,7 +176,7 @@ export const GarageData = [
     lot: '2',
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: GarageImage,
+    ImageUrl: GarageImage1,
   },
   {
     id: 18,
@@ -184,6 +185,6 @@ export const GarageData = [
     lot: '1',
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: GarageImage,
+    ImageUrl: GarageImage1,
   },
 ];

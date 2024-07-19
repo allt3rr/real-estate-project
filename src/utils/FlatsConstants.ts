@@ -1,4 +1,7 @@
-import ImageFlatPhoto from "/public/assets/adverts/flats/flat.webp";
+import ImageFlatPhoto1 from "/public/assets/adverts/flats/flat1.webp";
+import ImageFlatPhoto2 from "/public/assets/adverts/flats/flat2.webp";
+import ImageFlatPhoto3 from "/public/assets/adverts/flats/flat3.webp";
+import ImageFlatPhoto4 from "/public/assets/adverts/flats/flat4.webp";
 
 export const initialState = {
   location: "",
@@ -50,7 +53,7 @@ export const FlatsData = [
     metrics: 19,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: ImageFlatPhoto,
+    ImageUrl: ImageFlatPhoto1,
   },
   {
     id: 2,
@@ -61,7 +64,7 @@ export const FlatsData = [
     metrics: 26,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: ImageFlatPhoto,
+    ImageUrl: ImageFlatPhoto2,
   },
   {
     id: 3,
@@ -72,7 +75,7 @@ export const FlatsData = [
     metrics: 58,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: ImageFlatPhoto,
+    ImageUrl: ImageFlatPhoto3,
   },
   {
     id: 4,
@@ -83,7 +86,7 @@ export const FlatsData = [
     metrics: 88,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: ImageFlatPhoto,
+    ImageUrl: ImageFlatPhoto3,
   },
   {
     id: 5,
@@ -94,7 +97,7 @@ export const FlatsData = [
     metrics: 75,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: ImageFlatPhoto,
+    ImageUrl: ImageFlatPhoto2,
   },
   {
     id: 6,
@@ -105,7 +108,7 @@ export const FlatsData = [
     metrics: 35,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: ImageFlatPhoto,
+    ImageUrl: ImageFlatPhoto4,
   },
   {
     id: 7,
@@ -116,7 +119,7 @@ export const FlatsData = [
     metrics: 44,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: ImageFlatPhoto,
+    ImageUrl: ImageFlatPhoto4,
   },
   {
     id: 8,
@@ -127,7 +130,7 @@ export const FlatsData = [
     metrics: 42,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: ImageFlatPhoto,
+    ImageUrl: ImageFlatPhoto1,
   },
   {
     id: 9,
@@ -138,7 +141,7 @@ export const FlatsData = [
     metrics: 26,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: ImageFlatPhoto,
+    ImageUrl: ImageFlatPhoto2,
   },
   {
     id: 10,
@@ -149,7 +152,7 @@ export const FlatsData = [
     metrics: 46,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: ImageFlatPhoto,
+    ImageUrl: ImageFlatPhoto1,
   },
   {
     id: 11,
@@ -160,7 +163,7 @@ export const FlatsData = [
     metrics: 44,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: ImageFlatPhoto,
+    ImageUrl: ImageFlatPhoto1,
   },
   {
     id: 12,
@@ -171,7 +174,7 @@ export const FlatsData = [
     metrics: 72,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: ImageFlatPhoto,
+    ImageUrl: ImageFlatPhoto3,
   },
   {
     id: 13,
@@ -182,7 +185,7 @@ export const FlatsData = [
     metrics: 44,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: ImageFlatPhoto,
+    ImageUrl: ImageFlatPhoto4,
   },
   {
     id: 14,
@@ -193,7 +196,7 @@ export const FlatsData = [
     metrics: 72,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: ImageFlatPhoto,
+    ImageUrl: ImageFlatPhoto2,
   },
   {
     id: 15,
@@ -204,7 +207,7 @@ export const FlatsData = [
     metrics: 24,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: ImageFlatPhoto,
+    ImageUrl: ImageFlatPhoto3,
   },
   {
     id: 16,
@@ -215,7 +218,7 @@ export const FlatsData = [
     metrics: 25,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: ImageFlatPhoto,
+    ImageUrl: ImageFlatPhoto1,
   },
   {
     id: 17,
@@ -226,7 +229,7 @@ export const FlatsData = [
     metrics: 72,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: ImageFlatPhoto,
+    ImageUrl: ImageFlatPhoto4,
   },
   {
     id: 18,
@@ -237,6 +240,6 @@ export const FlatsData = [
     metrics: 44,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: ImageFlatPhoto,
+    ImageUrl: ImageFlatPhoto3,
   },
 ];

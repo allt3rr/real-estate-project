@@ -4,8 +4,6 @@ import React, { useEffect, useState } from "react";
 import { GarageData } from "@/utils/GarageConstants";
 import flatCircle from "/public/assets/adverts/flats/flat-circle.svg";
 import Image from "next/image";
-import Timeline from "@/components/flats/FlatSinglePage/Timeline";
-import Gallery from "@/components/flats/FlatSinglePage/Gallery";
 import { StaticImageData } from "next/image";
 import StarIcon from "@mui/icons-material/Star";
 
@@ -73,19 +71,6 @@ const FlatSinglePage = ({ params }: FlatProps) => {
             vehicula viverra mi, in luctus est.{" "}
           </li>
         </ul>
-      </div>
-      <div className=" md:mt-28 xl:mt-60">
-        <p className="uppercase font-semibold text-3xl text-center mx-2 sm:mx-0">
-          Lorem ipsum dolor sit amei
-        </p>
-        <Timeline />
-      </div>
-      <div className="flex flex-col justify-center items-center w-screen">
-        <p className="uppercase border-b-[#008EF4] border-b-2 font-bold text-4xl w-2/3 text-center mb-20 mt-32 pb-4">
-          galeria
-        </p>
-        <Gallery />
-        <span className="border-b-[#008EF4] border-b-2 mt-20 mb-12 w-2/3"></span>
       </div>
       <div className="w-screen flex flex-col items-center justify-center my-14">
         <p className="font-medium text-3xl text-center">

@@ -1,4 +1,7 @@
-import HouseImage from "/public/assets/adverts/houses/house_photo.webp";
+import HouseImage1 from "/public/assets/adverts/houses/house_photo1.webp";
+import HouseImage2 from "/public/assets/adverts/houses/house_photo2.webp";
+import HouseImage3 from "/public/assets/adverts/houses/house_photo3.webp";
+import HouseImage4 from "/public/assets/adverts/houses/house_photo4.webp";
 
 export const initialState = {
   location: "",
@@ -47,7 +50,7 @@ export const HouseData = [
     metrics: 690,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: HouseImage,
+    ImageUrl: HouseImage2,
   },
   {
     id: 2,
@@ -58,7 +61,7 @@ export const HouseData = [
     metrics: 260,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: HouseImage,
+    ImageUrl: HouseImage4,
   },
   {
     id: 3,
@@ -69,7 +72,7 @@ export const HouseData = [
     metrics: 580,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: HouseImage,
+    ImageUrl: HouseImage2,
   },
   {
     id: 4,
@@ -80,7 +83,7 @@ export const HouseData = [
     metrics: 881,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: HouseImage,
+    ImageUrl: HouseImage2,
   },
   {
     id: 5,
@@ -91,7 +94,7 @@ export const HouseData = [
     metrics: 831,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: HouseImage,
+    ImageUrl: HouseImage3,
   },
   {
     id: 6,
@@ -102,7 +105,7 @@ export const HouseData = [
     metrics: 612,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: HouseImage,
+    ImageUrl: HouseImage4,
   },
   {
     id: 7,
@@ -113,7 +116,7 @@ export const HouseData = [
     metrics: 533,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: HouseImage,
+    ImageUrl: HouseImage4,
   },
   {
     id: 8,
@@ -124,7 +127,7 @@ export const HouseData = [
     metrics: 784,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: HouseImage,
+    ImageUrl: HouseImage2,
   },
   {
     id: 9,
@@ -135,7 +138,7 @@ export const HouseData = [
     metrics: 400,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: HouseImage,
+    ImageUrl: HouseImage3,
   },
   {
     id: 10,
@@ -146,7 +149,7 @@ export const HouseData = [
     metrics: 580,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: HouseImage,
+    ImageUrl: HouseImage2,
   },
   {
     id: 11,
@@ -157,7 +160,7 @@ export const HouseData = [
     metrics: 674,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: HouseImage,
+    ImageUrl: HouseImage1,
   },
   {
     id: 12,
@@ -168,7 +171,7 @@ export const HouseData = [
     metrics: 692,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: HouseImage,
+    ImageUrl: HouseImage1,
   },
   {
     id: 13,
@@ -179,7 +182,7 @@ export const HouseData = [
     metrics: 774,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: HouseImage,
+    ImageUrl: HouseImage2,
   },
   {
     id: 14,
@@ -190,7 +193,7 @@ export const HouseData = [
     metrics: 485,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: HouseImage,
+    ImageUrl: HouseImage1,
   },
   {
     id: 15,
@@ -201,7 +204,7 @@ export const HouseData = [
     metrics: 921,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: HouseImage,
+    ImageUrl: HouseImage3,
   },
   {
     id: 16,
@@ -212,7 +215,7 @@ export const HouseData = [
     metrics: 651,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: HouseImage,
+    ImageUrl: HouseImage3,
   },
   {
     id: 17,
@@ -223,7 +226,7 @@ export const HouseData = [
     metrics: 546,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: HouseImage,
+    ImageUrl: HouseImage1,
   },
   {
     id: 18,
@@ -234,6 +237,6 @@ export const HouseData = [
     metrics: 440,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vehicula viverra mi, in luctus est.",
-    ImageUrl: HouseImage,
+    ImageUrl: HouseImage3,
   },
 ];

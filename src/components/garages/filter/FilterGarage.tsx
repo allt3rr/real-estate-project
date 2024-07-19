@@ -62,7 +62,7 @@ const Home = () => {
         {currentData.map((item) => (
           <div
             key={item.id}
-            className="item w-72 sm:w-80 boxShadowCustom2 rounded-xl relative hover:scale-105 transition-all"
+            className="item w-72 sm:w-80 boxShadowCustom2 rounded-xl relative hover:scale-105 transition-all overflow-hidden"
           >
             <Link href={`/garaze/${item.id}`}>
               <Image
@@ -77,7 +77,7 @@ const Home = () => {
               >
                 {item.type}
               </p>
-              <div className="flex py-2 px-2 rounded-b-xl bg-[#F0F0F0] flex-col sm:flex-row">
+              <div className="flex py-2 px-2 rounded-b-xl bg-[#F0F0F0] flex-col sm:flex-row h-full">
                 <div className="w-full sm:w-1/3">
                   <div className="flex items-center">
                     <Image
