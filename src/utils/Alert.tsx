@@ -13,7 +13,7 @@ const Alert = () => {
         isVisible ? "visible" : "hidden"
       }`}
     >
-      <div className="w-1/2 bg-[rgba(255,255,255,0.9)] p-6 relative rounded">
+      <div className="w-11/12 sm:w-5/6 md:w-1/2 bg-[rgba(255,255,255,0.9)] p-6 relative rounded">
         <Link
           href="#"
           onClick={() => {
