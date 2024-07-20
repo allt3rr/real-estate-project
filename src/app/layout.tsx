@@ -4,7 +4,6 @@ import localfont from "next/font/local";
 import "./globals.css";
 import Navbar from "../components/layout/navbar/Navbar";
 import Footer from "../components/layout/footer/Footer";
-import Alert from "@/utils/Alert";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -37,10 +36,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <body
-        className={`${inter.variable} ${jost.variable} relative`}
+        className={`${inter.variable} ${jost.variable}`}
         suppressHydrationWarning={true}
       >
-        <Alert />
         <Navbar />
         {children}
         <Footer />

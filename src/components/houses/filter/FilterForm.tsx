@@ -63,7 +63,7 @@ const FilterForm = ({ onFilter }: FilterFormProps) => {
       </div>
       <div className="flex flex-col">
         <label>
-          <p className="text-xl font-medium">Piętro:</p>
+          <p className="text-xl font-medium">Ilość pięter:</p>
           <Select
             name="flat"
             value={filters.flat}

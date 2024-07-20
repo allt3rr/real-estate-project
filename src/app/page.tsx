@@ -6,10 +6,12 @@ import SecondSection from "@/components/homepage/SecondSection/SecondSection";
 import Gallery from "@/components/homepage/Gallery/Gallery";
 import Map from "@/components/homepage/Map/Map";
 import ContactSection from "@/components/homepage/Contact/Contact";
+import Alert from "@/utils/Alert";
 
 export default function Home() {
   return (
     <>
+      <Alert />
       <Image
         src={home_photo}
         alt="Zdjęcie domu w tle strona główna"
