@@ -16,11 +16,7 @@ const FirstSection = () => {
         </div>
         <Text />
       </Circle>
-      <Image
-        src={Balcony}
-        alt="Zdjęcie pokazowe budowy"
-        className="mt-10 z-10"
-      />
+      <Image src={Balcony} alt="Zdjęcie balkonów" className="mt-10 z-10" />
     </div>
   );
 };
