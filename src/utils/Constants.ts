@@ -5,6 +5,14 @@ import hands from "../../public/assets/homepage/icons/hands.svg";
 
 import ImagePhoto from "/public/assets/realizations/house.webp";
 
+import house1 from "../../public/assets/adverts/houses/house_photo1.webp";
+import house2 from "../../public/assets/adverts/houses/house_photo2.webp";
+import house3 from "../../public/assets/adverts/houses/house_photo3.webp";
+import house4 from "../../public/assets/adverts/houses/house_photo4.webp";
+import flat1 from "../../public/assets/adverts/flats/flat1.webp";
+import flat2 from "../../public/assets/adverts/flats/flat2.webp";
+import flat3 from "../../public/assets/adverts/flats/flat3.webp";
+
 export const Icons = [
   { id: 1, icon_url: point, icon_description: "LOREM IPSUM" },
   { id: 2, icon_url: list, icon_description: "LOREM IPSUM" },
@@ -21,13 +29,13 @@ export const MenuItems = [
 ];
 
 export const Slides = [
-  { id: 1, content: "1" },
-  { id: 2, content: "2" },
-  { id: 3, content: "3" },
-  { id: 4, content: "4" },
-  { id: 5, content: "5" },
-  { id: 6, content: "6" },
-  { id: 7, content: "7" },
+  { id: 1, title: "Luksusowa Willa", type: "Dom", image: house1 },
+  { id: 2, title: "Nowoczesny Apartament", type: "Mieszkanie", image: flat1 },
+  { id: 3, title: "Rezydencja Ogrodowa", type: "Dom", image: house2 },
+  { id: 4, title: "Przytulne Studio", type: "Mieszkanie", image: flat2 },
+  { id: 5, title: "Klasyczny Segment", type: "Dom", image: house3 },
+  { id: 6, title: "Penthouse Widokowy", type: "Mieszkanie", image: flat3 },
+  { id: 7, title: "Modern Villa", type: "Dom", image: house4 },
 ];
 
 export const Realizations = [

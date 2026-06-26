@@ -1,20 +1,27 @@
 import Image from "next/image";
-import FirstTitle from "/public/assets/homepage/tekst1.svg";
-import SecondTitle from "/public/assets/homepage/tekst2.svg";
+import home_photo from "/public/assets/homepage/home_photo.webp";
 
 const HomeText = () => {
   return (
-    <div className="w-screen aspect-video xl:h-screen flex justify-center items-center flex-col absolute top-0 left-0">
+    <div className="relative w-full h-[65vh] sm:h-[80vh] xl:h-screen overflow-hidden">
       <Image
-        src={FirstTitle}
-        alt="Tekst pierwszy główny ekran"
-        className="translate-y-10 w-3/4 sm:w-1/2 z-40"
+        src={home_photo}
+        alt="Zdjęcie domu w tle strona główna"
+        fill
+        priority
+        className="object-cover"
+        sizes="100vw"
       />
-      <Image
-        src={SecondTitle}
-        alt="Tekst drugi główny ekran"
-        className="translate-y-10 w-1/2 sm:w-1/3 z-40"
-      />
+      <div className="absolute inset-0 bg-black/35 z-10" />
+
+      <div className="absolute inset-0 flex justify-center items-center flex-col z-20 px-4">
+        <h1 className="font-jost text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white text-center tracking-wider uppercase drop-shadow-[0_4px_12px_rgba(0,0,0,0.6)]">
+          LOREM IPSUM
+        </h1>
+        <h2 className="font-jost text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-[#008EF4] text-center tracking-widest uppercase mt-4 bg-white/10 backdrop-blur-sm px-6 py-2 rounded-full border border-white/20 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
+          Nieruchomości z pasją
+        </h2>
+      </div>
     </div>
   );
 };

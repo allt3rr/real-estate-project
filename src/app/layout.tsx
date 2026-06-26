@@ -15,7 +15,6 @@ const jost = localfont({
   src: [
     {
       path: "../../public/fonts/Jost-VariableFont_wght.ttf",
-      weight: "700",
     },
   ],
   display: "swap",
@@ -34,10 +33,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning={true}>
+    <html lang="pl">
       <body
         className={`${inter.variable} ${jost.variable}`}
-        suppressHydrationWarning={true}
       >
         <Navbar />
         {children}

@@ -1,18 +1,14 @@
-import Image from "next/image";
-import GalleryArrow from "/public/assets/homepage/Arrow 2.png";
 import GalleryImages from "./GalleryImages/GalleryImages";
 
 const Gallery = () => {
   return (
-    <div className="mt-32 md:mt-56">
-      <div className="flex -translate-x-44 sm:-translate-x-14 items-center">
-        <Image
-          src={GalleryArrow}
-          alt="Strzalka galerii"
-          width={500}
-          height={20}
-        />
-        <h1 className="font-jost text-2xl sm:text-4xl ms-2">GALERIA</h1>
+    <div className="container mx-auto px-6 py-16 md:py-24">
+      <div className="flex items-center justify-between gap-6 mb-12">
+        <div className="flex-grow h-0.5 bg-gradient-to-r from-transparent to-[#008EF4]" />
+        <h2 className="font-jost text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#003861] uppercase tracking-wider whitespace-nowrap px-4">
+          Galeria
+        </h2>
+        <div className="flex-grow h-0.5 bg-gradient-to-l from-transparent to-[#008EF4]" />
       </div>
       <GalleryImages />
     </div>

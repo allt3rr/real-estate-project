@@ -1,27 +1,25 @@
-import Arrow from "/public/assets/homepage/Arrow.svg";
-import Image from "next/image";
 import Images from "./Images/Images";
 
 const SecondSection = () => {
   return (
-    <div className="relative h-full w-screen mb-14 sm:mb-0 overflow-hidden">
-      <h1 className="text-lg xl:text-xl sm:w-7/12 px-10 sm:ps-24 xl:ps-60 pt-52 lg:pt-72 z-10 sticky xl:mt-10">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in ex
-        elementum neque scelerisque interdum. Fusce ultrices consequat dui quis
-        laoreet. Nullam dapibus venenatis erat in aliquet.
-      </h1>
-      <div className="rounded-full flex items-center w-11/12 sm:w-6/12 aspect-square bg-[#F4F4F4] absolute top-0 right-0 z-0 translate-x-20 -translate-y-28 xl:-translate-y-72">
-        <div className="w-full flex justify-end me-20 mt-20">
-          <h1 className="font-jost text-base sm:text-xl md:text-2xl lg:text-4xl me-2">
-            Z NAMI ZYSKUJESZ
-          </h1>
-          <Image
-            src={Arrow}
-            alt="Niebieska strzałka"
-            className="w-2/12 rotate-180"
-          />
+    <div className="container mx-auto px-6 py-16 md:py-24 relative overflow-hidden">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 mb-16 lg:mb-20">
+        <div className="md:w-1/2">
+          <div className="flex items-center gap-3 mb-4">
+            <h2 className="font-jost text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#003861] uppercase tracking-wide">
+              Z NAMI ZYSKUJESZ
+            </h2>
+          </div>
+          <div className="w-20 h-1.5 bg-[#008EF4] rounded-full" />
         </div>
+
+        <p className="md:w-1/2 text-base sm:text-lg text-gray-600 leading-relaxed font-medium">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in ex
+          elementum neque scelerisque interdum. Fusce ultrices consequat dui quis
+          laoreet. Nullam dapibus venenatis erat in aliquet.
+        </p>
       </div>
+
       <Images />
     </div>
   );
