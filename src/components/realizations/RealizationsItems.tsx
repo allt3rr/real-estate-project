@@ -1,39 +1,84 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { Realizations } from "@/utils/Constants";
 
 const RealizationsItems = () => {
   return (
-    <>
-      {Realizations.map((item) => (
-        <div
-          className="relative w-screen h-screen flex mt-14 sm:mt-0 sm:items-center flex-col lg:flex-row mb-2 sm:mb-44 lg:mb-10"
-          key={item.id}
-        >
-          <div className="w-full sm:w-4/5 lg:w-4/5 xl:w-2/5 h-1/2 sm:h-3/4 bg-[#F6F6F6] rounded-full flex justify-end items-center -translate-x-1/4 sm:-translate-x-1/2 my-20 boxShadowCustom">
-            <p className="w-2/3 sm:w-1/3 sm:-translate-x-20 leading-6 sm:leading-8 text-base sm:text-xl">
-              {item.description}
-            </p>
-          </div>
-          <div className="flex flex-col items-center relative me-0 lg:me-10 xl:me-0 mb-16 lg:mb-0">
-            <h1 className="font-black text-2xl sm:text-4xl uppercase tracking-wide">
-              {item.title}
-            </h1>
-            <hr className="w-3/4 h-1 bg-[#008EF4] border-none mb-8 mt-4" />
-            <Image
-              src={item.ImageUrl}
-              width={750}
-              height={560}
-              alt="Zdjęcie produktu"
-              className="rounded-xl"
-            />
-            <div className="bg-[#F6F6F6] absolute lg:left-0 bottom-0 rounded-full px-6 py-8 sm:px-14 sm:py-20 boxShadowCustom lg:-translate-x-1/2 translate-y-2/3 lg:translate-y-1/2">
-              <p className="text-2xl">{item.Location}</p>
+    <div className="container mx-auto px-6 py-20 md:py-28 space-y-24 md:space-y-36">
+      {Realizations.map((item, index) => {
+        const isEven = index % 2 === 0;
+        return (
+          <div
+            key={item.id}
+            className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center"
+          >
+            {/* Image Column */}
+            <div
+              className={`w-full lg:col-span-7 ${
+                isEven ? "" : "lg:order-last"
+              }`}
+            >
+              <div className="relative aspect-[4/3] w-full rounded-[2rem] overflow-hidden shadow-2xl border-8 border-white bg-white group">
+                <Image
+                  src={item.ImageUrl}
+                  alt={item.title}
+                  fill
+                  placeholder="blur"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                  sizes="(max-width: 1024px) 100vw, 60vw"
+                />
+                
+                {/* Location Badge on Image */}
+                <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md px-5 py-2.5 rounded-2xl shadow-lg border border-white/20 z-20 flex items-center gap-2 text-sm font-bold text-[#003861] uppercase tracking-wider">
+                  <span className="text-[#008EF4] text-base">📍</span>
+                  {item.Location}
+                </div>
+              </div>
+            </div>
+
+            {/* Content Column */}
+            <div className="w-full lg:col-span-5 flex flex-col items-start">
+              <span className="text-xs font-bold text-[#008EF4] tracking-widest uppercase mb-2">
+                Inwestycja Zakończona
+              </span>
+              <h2 className="font-jost text-3xl sm:text-4xl font-extrabold text-[#003861] uppercase tracking-wide leading-tight mb-4">
+                {item.title}
+              </h2>
+              <div className="w-16 h-1 bg-[#008EF4] rounded-full mb-6" />
+              
+              <p className="text-base sm:text-lg text-gray-600 leading-relaxed font-medium mb-8">
+                {item.description}
+              </p>
+              
+              {/* Premium metadata details list */}
+              <div className="grid grid-cols-2 gap-4 w-full border-t border-b border-gray-100 py-6 mb-6">
+                <div>
+                  <p className="text-xs text-gray-400 uppercase tracking-wider">Status</p>
+                  <p className="font-bold text-sm sm:text-base text-[#003861] mt-0.5">Oddane do użytku</p>
+                </div>
+                <div>
+                  <p className="text-xs text-gray-400 uppercase tracking-wider">Standard</p>
+                  <p className="font-bold text-sm sm:text-base text-[#008EF4] mt-0.5">Premium Executive</p>
+                </div>
+              </div>
+
+              <a
+                href="#"
+                onClick={(e) => e.preventDefault()}
+                className="inline-flex items-center gap-2 text-sm font-bold text-[#003861] hover:text-[#008EF4] transition-colors uppercase tracking-wider group mt-2"
+              >
+                Zobacz szczegóły
+                <span className="inline-block transform group-hover:translate-x-1 transition-transform duration-300">
+                  →
+                </span>
+              </a>
             </div>
           </div>
-        </div>
-      ))}
-    </>
+        );
+      })}
+    </div>
   );
 };
 
